@@ -1,0 +1,20 @@
+{
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "singleQuote": true,
+  "semi": true,
+  "printWidth": 300,
+  "tabWidth": 2,
+  "useTabs": false,
+  "proseWrap": "preserve",
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "eslintIntegration": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "ignorePath": ".gnore",
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "parser": "typescript",
+  "requireConfig": false,
+  "tslintIntegration": false
+}
