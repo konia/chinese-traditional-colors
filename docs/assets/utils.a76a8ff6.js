@@ -1,0 +1,1 @@
+const l=([o,t,e])=>{o/=255,t/=255,e/=255;const a=Math.max(o,t,e),s=Math.min(o,t,e);let n=(a+s)/2,h=(a+s)/2,r=(a+s)/2;if(a==s)n=h=0;else{const c=a-s;switch(h=r>.5?c/(2-a-s):c/(a+s),a){case o:n=(t-e)/c+(t<e?6:0);break;case t:n=(e-o)/c+2;break;case e:n=(o-t)/c+4;break}n/=6}return[Math.floor(n*100),Math.round(h*100)+"%",Math.round(r*100)+"%"]};export{l as r};

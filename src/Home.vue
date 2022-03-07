@@ -47,7 +47,8 @@ const goToDetails = (color) => {
   <section>
     <main>
       <ul class="color-card">
-        <li v-for="color in color_plate" :key="color.pinyin" @click="goToDetails(color)">
+        <li v-for="color in color_plate" :key="color.pinyin" :class="{ white: rgbToHsl(color.RGB)[2].substr(0,2) < 80 }" @click="goToDetails(color)" :style="{ backgroundColor: color.HEX }">
+        <!-- <div class="color-plate" ></div> -->
           <div class="color-info">
             <div class="color-mode-name">{{ state }}</div>
             <div class="color-name">{{ color.name }}</div>
@@ -57,7 +58,7 @@ const goToDetails = (color) => {
               <span v-else>{{ state == "HSL" && `hsl(${rgbToHsl(color.RGB)})` }}</span>
             </div>
           </div>
-          <div class="color-plate" :style="{ backgroundColor: color.HEX }"></div>
+          
         </li>
       </ul>
     </main>
